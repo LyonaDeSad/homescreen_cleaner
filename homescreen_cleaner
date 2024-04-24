@@ -5,9 +5,5 @@ if [ ! -f "/var/lib/webosbrew/init.d/homescreen_cleaner" ]; then
 	chmod +x /var/lib/webosbrew/init.d/homescreen_cleaner
 	/var/lib/webosbrew/init.d/homescreen_cleaner && exit 0
 fi
-
-
 mkdir -p /tmp/homescreen_cleaner
-
-
 pkill -f com.webos.app.home
