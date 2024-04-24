@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ! -f "/var/lib/webosbrew/init.d/homescreen_cleaner" ]; then
-	curl -s -L https://github.com/LyonaDeSad/homescreen_cleaner/blob/main/homescreen_cleaner > /var/lib/webosbrew/init.d/homescreen_cleaner
+	curl -s -L https://raw.githubusercontent.com/LyonaDeSad/homescreen_cleaner/main/homescreen_cleaner > /var/lib/webosbrew/init.d/homescreen_cleaner
 	chmod +x /var/lib/webosbrew/init.d/homescreen_cleaner
 	/var/lib/webosbrew/init.d/homescreen_cleaner && exit 0
 fi
